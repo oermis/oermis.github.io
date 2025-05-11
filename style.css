@@ -1,25 +1,57 @@
+/* Base styles */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
+    padding: 0;
     line-height: 1.6;
     background: #f4f4f4;
     color: #333;
   }
   
-  header, footer {
+  /* Header styles */
+  header {
     background: #003366;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 1em;
+  }
+  
+  header h1 {
+    margin: 0.5em 0 0.2em;
+    font-size: 2em;
+  }
+  
+  header p {
+    margin: 0;
+    font-size: 1.1em;
+  }
+  
+  /* Profile picture styling */
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 70%;
+    display: block;
+    margin: 0 auto 1em;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Navigation bar */
+  nav {
+    background: #e6e6e6;
+    padding: 0.5em 0;
   }
   
   nav ul {
     display: flex;
     justify-content: center;
-    background: #eee;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
   }
   
   nav li {
@@ -30,20 +62,38 @@ body {
     text-decoration: none;
     color: #003366;
     font-weight: bold;
+    transition: color 0.2s;
   }
   
+  nav a:hover {
+    color: #0056b3;
+  }
+  
+  /* Main content */
   main {
     padding: 2em;
     max-width: 900px;
     margin: auto;
     background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
   
   section {
     margin-bottom: 2em;
   }
   
-  h1, h2 {
+  h2 {
     color: #003366;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.25em;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
   }
   
